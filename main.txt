@@ -25,6 +25,14 @@ class someclass{
 
 include someclass #this is how you call the class to operate
 
-#module: a collection of manifests and associated data
+# module: a collection of manifests and associated data
 
 include ::modulename # this includes a module
+
+# Node: a system where we can run a puppet agent
+
+node something {
+    class {'someclass':}
+    class {'anotherclass':}
+    class {'anothergoddamnclass':}
+}
