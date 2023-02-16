@@ -3,9 +3,7 @@
 #Running a puppet file in linux terminal:
 sudo puppet apply -v tools.pp
 
-<<<<<<< HEAD
 An idempotent action can be performed over and over again without changing the system after the first time the action was performed, and with no unintended side effects.
-=======
 # Catalog: The list of rules that are generated for one specific computer once the server has evaluated all variables, conditionals, and functions.
 
 # Facts: variables that represent the characteristics of the system.
@@ -39,4 +37,7 @@ node something {
     class {'anotherclass':}
     class {'anothergoddamnclass':}
 }
->>>>>>> 0ad0274d295329ff69f4e32bde88073b934ef79b
+
+Software as a Service (SaaS): when a cloud provider delivers an entire applicatoin or program to the customer.
+Platform as a Service (PaaS): when a cloud provider offers a preconfigured platform to the customer.
+Infrastructure as a Service (IaaS): when a cloud provider supplies only the bare-bones computing experience.
