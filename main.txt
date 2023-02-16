@@ -41,3 +41,5 @@ node something {
 Software as a Service (SaaS): when a cloud provider delivers an entire applicatoin or program to the customer.
 Platform as a Service (PaaS): when a cloud provider offers a preconfigured platform to the customer.
 Infrastructure as a Service (IaaS): when a cloud provider supplies only the bare-bones computing experience.
+
+Capacity: how much the service can deliver.
