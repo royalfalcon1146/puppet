@@ -1,5 +1,42 @@
-Kaizokuni Oraewa Naru
+#Kaizokuni Oraewa Naru
 
-Facts: variables that represent the characteristics of the system.
+#Running a puppet file in linux terminal:
+sudo puppet apply -v tools.pp
 
+<<<<<<< HEAD
 An idempotent action can be performed over and over again without changing the system after the first time the action was performed, and with no unintended side effects.
+=======
+# Catalog: The list of rules that are generated for one specific computer once the server has evaluated all variables, conditionals, and functions.
+
+# Facts: variables that represent the characteristics of the system.
+
+# An idempotent action can be performed over and over again without changing the system after the first time the action was performed, and with no unintended side effects.
+
+# Puppet files are called manifests. They end with the extension ".pp"
+
+# We write resource types in lowercase when declaring the, but capitalize them when referring to them from another resource's attribute.
+
+package {'package-name':
+    ensure => present, # making sure the package is installed
+    ensure => latest, # makes sure it is the latest version
+}
+#code above will download the package if it wasnt found, if found it will not download it
+
+class someclass{
+    #pretend it is full
+}
+
+include someclass #this is how you call the class to operate
+
+# module: a collection of manifests and associated data
+
+include ::modulename # this includes a module
+
+# Node: a system where we can run a puppet agent
+
+node something {
+    class {'someclass':}
+    class {'anotherclass':}
+    class {'anothergoddamnclass':}
+}
+>>>>>>> 0ad0274d295329ff69f4e32bde88073b934ef79b
